@@ -1,4 +1,4 @@
-const PiggySDK = require("../main/index");
+const PiggySDK = require('../main/index');
 
 class Auth extends PiggySDK {
   constructor(apiKey) {
@@ -6,15 +6,15 @@ class Auth extends PiggySDK {
   }
 
   //   login function
-  async login(authData) {
-    const endpoint = "/login";
-    const user = await this.makeRequest(endpoint, "POST", authData);
+  async login(authData, password = '') {
+    const endpoint = '/login';
+    const user = await this.makeRequest(endpoint, 'POST', authData, password);
     return user;
   }
 
   async register(userData) {
-    const endpoint = "/register";
-    const user = await this.makeRequest(endpoint, "POST", userData);
+    const endpoint = '/register';
+    const user = await this.makeRequest(endpoint, 'POST', userData);
     return user;
   }
 }
