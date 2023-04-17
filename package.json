@@ -1,6 +1,6 @@
 {
   "name": "piggy-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A practice sdk for several use cases on piggyvest.",
   "main": "dist/index.cjs",
   "type": "module",
