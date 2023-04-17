@@ -1,4 +1,4 @@
-const banner = `// Piggy-SDK v${lib.version} Copyright (c) 2023 Joshua Ajagbe and contributors`;
+const banner = `// Piggy-SDK Copyright (c) 2023 Joshua Ajagbe and contributors`;
 export default {
   input: 'src/index.js',
   output: [
