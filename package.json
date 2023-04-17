@@ -2,10 +2,10 @@
   "name": "piggy-sdk",
   "version": "1.0.0",
   "description": "A practice sdk for several use cases on piggyvest.",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "type": "module",
   "bin": {
-    "piggy-sdk": "./dist/index.js"
+    "piggy-sdk": "./dist/index.cjs"
   },
   "scripts": {
     "start": "node src/try.js",
@@ -21,7 +21,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
+      "import": "./dist/index.es.cjs",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

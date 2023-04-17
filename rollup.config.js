@@ -3,7 +3,7 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      file: 'dist/index.js',
+      file: 'dist/index.cjs',
       format: 'cjs',
       sourcemap: true,
       exports: 'default',
