@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A practice sdk for several use cases on piggyvest.",
   "main": "dist/index.js",
+  "type": "module",
   "bin": {
     "piggy-sdk": "./dist/index.js"
   },
