@@ -1,6 +1,16 @@
-const PiggySDK = require('../main/index');
+import PiggySDK from '../main/index.js';
 
+/**
+ * @description
+ * @class Auth
+ * @extends {PiggySDK}
+ */
 class Auth extends PiggySDK {
+  /**
+   * Creates an instance of Auth.
+   * @param {string} apiKey
+   * @memberof Auth
+   */
   constructor(apiKey) {
     super(apiKey);
   }
@@ -19,4 +29,4 @@ class Auth extends PiggySDK {
   }
 }
 
-module.exports = Auth;
+export default Auth;

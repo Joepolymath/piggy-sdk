@@ -1,6 +1,15 @@
-const axios = require('axios');
+import axios from 'axios';
 
+/**
+ * @description
+ * @class PiggySDK
+ */
 class PiggySDK {
+  /**
+   * Creates an instance of PiggySDK.
+   * @param {string} apiKey
+   * @memberof PiggySDK
+   */
   constructor(apiKey) {
     this.apiKey = apiKey;
     this.baseUrl = 'https://app.piggyvest.com/api/v3';
@@ -8,6 +17,15 @@ class PiggySDK {
     this.origin = 'https://dashboard.piggyvest.com';
   }
 
+  /**
+   * @description
+   * @param {string} endpoint
+   * @param {string} [method='GET']
+   * @param {*} [data={}]
+   * @param {string} [password='']
+   * @return {*}
+   * @memberof PiggySDK
+   */
   async makeRequest(endpoint, method = 'GET', data = {}, password = '') {
     const url = `${this.baseUrl}${endpoint}`;
     const headers = {
@@ -38,4 +56,4 @@ class PiggySDK {
   }
 }
 
-module.exports = PiggySDK;
+export default PiggySDK;

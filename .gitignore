@@ -1,3 +1,5 @@
 temp.js
 node_modules
 .env
+dist
+try.js
